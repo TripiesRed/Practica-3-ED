@@ -50,9 +50,11 @@ public:
 
     int getScore (string word);
 
+    bool find (const char &key);
+
     LettersSet & operator=(const LettersSet &cl);
 
-    LettersSet & operator[](const char &val);
+    LetterInfo & operator[](const char &val);
 
     friend ostream & operator<<(ostream &os, const LettersSet &cl);
 
@@ -65,6 +67,27 @@ public:
         map<char, LetterInfo>::const_iterator it;
 
     public:
+        iterator() = default;
+
+        iterator (const iterator &other){
+            it = other.it;
+        }
+
+        iterator & operator=(const map<char, LetterInfo>::const_iterator &other){
+            it = other;
+            return *this;
+        }
+
+        bool operator!=(const map<char, LetterInfo>::const_iterator &other){
+            bool iguales = this->it!=other ? true : false;
+            return iguales;
+        }
+
+        bool operator==(const map<char, LetterInfo>::const_iterator &other){
+            bool iguales = this->it!=other ? true : false;
+            return iguales;
+        }
+
     };
 
 };

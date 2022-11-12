@@ -1,3 +1,4 @@
+/home/gonzalomp/Escritorio/EstructuraDatos/ej03_tdas_letras/cmake-build-debug/CMakeFiles/conjunto_letras.dir
 /home/gonzalomp/Escritorio/EstructuraDatos/ej03_tdas_letras/cmake-build-debug/CMakeFiles/bolsa.dir
 /home/gonzalomp/Escritorio/EstructuraDatos/ej03_tdas_letras/cmake-build-debug/CMakeFiles/doc_doxygen.dir
 /home/gonzalomp/Escritorio/EstructuraDatos/ej03_tdas_letras/cmake-build-debug/CMakeFiles/edit_cache.dir
