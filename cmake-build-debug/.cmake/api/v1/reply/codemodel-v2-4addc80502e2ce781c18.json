@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "p04_tdas_no_lineales",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "bolsa::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bolsa-Debug-b9067d6277b5e0952dd0.json",
+					"name" : "bolsa",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "conjunto_letras::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-conjunto_letras-Debug-4413008aaf055d24a098.json",
+					"name" : "conjunto_letras",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doc_doxygen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doc_doxygen-Debug-d7734cbeb4acca474c4d.json",
+					"name" : "doc_doxygen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/gonzalomp/Escritorio/EstructuraDatos/ej03_tdas_letras/cmake-build-debug",
+		"source" : "/home/gonzalomp/Escritorio/EstructuraDatos/ej03_tdas_letras"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
