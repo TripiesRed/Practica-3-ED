@@ -75,7 +75,7 @@ LetterInfo & LettersSet::operator[](const char &val){
     return letras[val];
 }
 
-//Operador de entrada
+//Operador de salida
 ostream & operator<<(ostream &os, const LettersSet &cl){
     string header = "Letra Cantidad Puntos";
     os << header << endl;
