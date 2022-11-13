@@ -144,7 +144,7 @@ public:
     /**
      * @brief TDA LettersSet::const_iterator
      *
-     * Este TDA representa un 'iterador' sobre la clase LettersSet con todas las operaciones
+     * Este TDA representa un 'iterador' sobre la clase LettersSet con las operaciones básicas
      * que cabría esperar del 'iterador' si se tratase de un contenedor tipo map.
      */
     class iterator{
@@ -199,7 +199,7 @@ public:
          *  false en caso contrario.
          */
         bool operator==(const map<char, LetterInfo>::const_iterator &other){
-            bool iguales = this->it!=other ? true : false;
+            bool iguales = this->it==other ? true : false;
             return iguales;
         }
 
