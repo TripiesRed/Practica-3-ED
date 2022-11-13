@@ -10,6 +10,7 @@ using namespace std;
 
 int main (int argc, char *arg[]){
 
+    //Control de entrada de argumentos
     if (argc != 3){
         cerr << "Error: Numero incorrecto de parametros.\n";
         cerr << "Uso: negativo <FichImagenOriginal> <FichImagenDestino>\n";
@@ -27,6 +28,7 @@ int main (int argc, char *arg[]){
     input >> conjunto;
     input.close();
 
+    //Cálculo de puntuación
     cout << conjunto.getScore(arg[2]) << endl;
 
     return 0;

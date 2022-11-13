@@ -1,3 +1,9 @@
+/**
+ * @file bag.h
+ * @brief  Archivo de especificación del TDA Bag
+ * @author Gonzalo Martínez Piédrola & Diego Ortega Sánchez
+ */
+
 #ifndef __BAG_H__
 #define __BAG_H__
 

@@ -1,3 +1,9 @@
+/**
+ * @file letters_bag.h
+ * @brief  Archivo de especificación del TDA LettersBag
+ * @author Gonzalo Martínez Piédrola & Diego Ortega Sánchez
+ */
+
 #ifndef __LETTERS_BAG_H__
 #define __LETTERS_BAG_H__
 

@@ -1,3 +1,9 @@
+/**
+ * @file letters_set.cpp
+ * @brief  Archivo de implementación del TDA LettersSet
+ * @author Gonzalo Martínez Piédrola & Diego Ortega Sánchez
+ */
+
 #include <letters_set.h>
 #include <iostream>
 
