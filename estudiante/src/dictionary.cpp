@@ -21,9 +21,14 @@ Dictionary::Dictionary(const Dictionary &other) {
 //Comprueba si el elemento ya está en el conjunto
 bool Dictionary::existe (const string & val) const{
     set<string>::iterator it = words.begin();
+    bool encontrada = false;
 
     for (int i = 0; i < val.length(); ++i)
-        while(it->at(i) != val.at(i)) it++;
+        while( (it->at(i) != val.at(i)) && (it->at(i) <= val.at(i)) ) it++;
+
+    if (*it == val) encontrada = true;
+
+    return encontrada;
 }
 
 //Añade un nuevo elemento al contenedor
@@ -58,18 +63,40 @@ unsigned int Dictionary::size() const {
     return words.size();
 }
 
-//Calcula el valor total de una palabra
+//Calcula el número total de apariciones de un carácter en el diccionario
 int Dictionary::getOccurrences(const char c){
     int total=0;
+
+    for (set<string>::iterator it = words.begin(); it != words.end(); it++)
+        if(it->find(c) != string::npos)//Comprobamos si la palabra tiene el carácter c
+            for(int i = 0; i < it->length(); i++) //Recorremos la palabra
+                if(it->at(i) == c) //Contamos cuantas veces tiene la palabra el carácter c
+                    total++;
+
+
     return total;
 }
 
+//Calcula el total de letras que hay en el diccionario
 int Dictionary::getTotalLetters(){
+    int total = 0;
+    for (set<string>::iterator it = words.begin(); it != words.end(); it++)
+        total += it->length();
 
+    return total;
 }
 
+//Crea un vector con todas las palabras con la longitud dada
 vector<string> Dictionary::wordsOfLength (int length){
+    vector<string> v;
+    set<string>::iterator it = words.begin();
 
+    while(it!=words.end()){
+        if(it->length() == length) v.push_back(*it);
+        it++;
+    }
+
+    return v;
 }
 
 
