@@ -172,6 +172,16 @@ public:
         }
 
         /**
+         * @brief Constructor de copia (versión 2).
+         * @param other iterator a copiar.
+         * @return iterator, el objeto creado.
+         * @post other no se modifica.
+         */
+        iterator (const map<char, LetterInfo>::const_iterator &other){
+            it = other;
+        }
+
+        /**
          * @brief Sobrecarga del operador de asignación.
          * @param other iterator que se va a copiar.
          * @return Referencia al objeto this que permita encadenar el operador.
@@ -187,8 +197,8 @@ public:
          * @return Booleano que marca true en caso de ser iteradores distintos,
          *  false en caso contrario.
          */
-        bool operator!=(const map<char, LetterInfo>::const_iterator &other){
-            bool distintos = this->it!=other ? true : false;
+        bool operator!=(const iterator &other){
+            bool distintos = this->it!=other.it ? true : false;
             return distintos;
         }
 
@@ -198,12 +208,74 @@ public:
          * @return Booleano que marca true en caso de ser iteradores iguales,
          *  false en caso contrario.
          */
-        bool operator==(const map<char, LetterInfo>::const_iterator &other){
-            bool iguales = this->it==other ? true : false;
+        bool operator==(const iterator &other){
+            bool iguales = this->it==other.it ? true : false;
             return iguales;
         }
 
+        /**
+         * @brief Sobrecarga del operador (pre) incremento.
+         * @return Referencia al objeto this.
+         */
+        iterator &operator++(){
+            ++it;
+            return *this;
+        }
+
+        /**
+         * @brief Sobrecarga del operador (pre) decremento.
+         * @return Referencia al objeto this.
+         */
+        iterator &operator--(){
+            --it;
+            return *this;
+        }
+
+        /**
+         * @brief Sobrecarga del operador (pos) incremento.
+         * @return Referencia al objeto this.
+         */
+        iterator &operator++(int n){
+            it++;
+            return *this;
+        }
+
+        /**
+         * @brief Sobrecarga del operador (pos) decremento.
+         * @return Referencia al objeto this.
+         */
+        iterator &operator--(int n){
+            it--;
+            return *this;
+        }
+
+        /**
+         * @brief Sobrecarga del operador de indirección.
+         * @return Referencia al objeto apuntado por el dato privado it.
+         */
+        const pair<const char, LetterInfo> &operator*() const{
+            return *it;
+        }
+
     };
+
+    /**
+     * @brief Devuelve un iterador que apunta a la primera posición de la estructura.
+     * @return Objeto del tipo iterator de la clase LettersSet.
+     */
+    iterator begin() const{
+        iterator it = letras.begin();
+        return it;
+    }
+
+    /**
+     * @brief Devuelve un iterador que apunta a la última posición de la estructura.
+     * @return Objeto del tipo iterator de la clase LettersSet.
+     */
+    iterator end() const{
+        iterator it = letras.end();
+        return it;
+    }
 
 };
 

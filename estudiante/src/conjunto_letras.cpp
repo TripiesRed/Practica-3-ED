@@ -1,7 +1,3 @@
-//
-// Created by gonzalomp on 12/11/22.
-//
-
 #include <letters_set.h>
 #include <iostream>
 #include <fstream>
@@ -13,7 +9,7 @@ int main (int argc, char *arg[]){
     //Control de entrada de argumentos
     if (argc != 3){
         cerr << "Error: Numero incorrecto de parametros.\n";
-        cerr << "Uso: negativo <FichImagenOriginal> <FichImagenDestino>\n";
+        cerr << "Uso: conjunto_letras <FichLetras> <Palabra>\n";
         exit (1);
     }
 

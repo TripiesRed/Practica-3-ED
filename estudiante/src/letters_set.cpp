@@ -65,7 +65,7 @@ bool LettersSet::find(const char &key) {
     LettersSet::iterator it;
 
     it = letras.find(key);
-    if(it != letras.end()) found = true;
+    if(it != end()) found = true;
 
     return found;
 }
@@ -103,7 +103,7 @@ ostream & operator<<(ostream &os, const LettersSet &cl){
 
 //Operador de entrada
 istream & operator>>(istream &is, LettersSet &cl){
-    string header = "Letra Cantidad Puntos";
+    string header;
     is >> header >> header >> header;
 
     int i=0;
