@@ -28,13 +28,13 @@ if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/cantidad_letras.cpp)
   add_executable(cantidad_letras
     ${BASE_FOLDER}/src/cantidad_letras.cpp
     ${BASE_FOLDER}/src/dictionary.cpp
-    ${BASE_FOLDER}/src/letters_set.cpp)
+    ${BASE_FOLDER}/src/letters_set.cpp estudiante/src/cantidad_letras.cpp)
 endif()
 
 if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/palabras_longitud.cpp)
   add_executable(palabras_longitud
     ${BASE_FOLDER}/src/palabras_longitud.cpp
-    ${BASE_FOLDER}/src/dictionary.cpp)
+    ${BASE_FOLDER}/src/dictionary.cpp estudiante/src/palabras_longitud.cpp)
 endif()
 
 # check if Doxygen is installed
