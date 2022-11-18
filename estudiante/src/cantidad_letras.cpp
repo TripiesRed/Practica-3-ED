@@ -32,14 +32,16 @@ int main (int argc, char *arg[]) {
     input >> letras;
     input.close();
 
-    cout << "Letra FAbs. Frel. " << endl;
-    double fabs, frel;
+    cout << "Letra\tFAbs.\tFrel." << endl;
+    double frel;
+    int fabs;
     int total_letras = diccionario.getTotalLetters();
+    char c;
     for (LettersSet::iterator it = letras.begin(); it != letras.end();  it++) {
-        pair<const char, LetterInfo> c =*it;
-        fabs = diccionario.getOccurrences(c.first);
-        frel = fabs/total_letras;
-        cout << c.first << " " << fabs << " " << frel <<endl;
+        c =(*it).first;
+        fabs = diccionario.getOccurrences(c);
+        frel = fabs/(total_letras*1.0);
+        cout << c << "\t" << fabs << "\t" << frel <<endl;
     }
 
     return 0;

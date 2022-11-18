@@ -76,3 +76,13 @@
 0	263	1668788967788091572	CMakeFiles/palabras_longitud.dir/estudiante/src/palabras_longitud.cpp.o	63bb1bf83a90572c
 1	382	1668788967908095196	CMakeFiles/palabras_longitud.dir/estudiante/src/dictionary.cpp.o	6dc796687ac9f25c
 382	457	1668788967984097493	palabras_longitud	168baadf68a97bd4
+1	292	1668789304620701248	CMakeFiles/cantidad_letras.dir/estudiante/src/cantidad_letras.cpp.o	b156a4715c2884e9
+1	345	1668789304676702041	CMakeFiles/cantidad_letras.dir/estudiante/src/letters_set.cpp.o	23e0629ed2f86ac1
+1	348	1668789304676702041	CMakeFiles/cantidad_letras.dir/estudiante/src/dictionary.cpp.o	c0553ec6cbb05581
+348	386	1668789304716702607	cantidad_letras	d900cf6abb4d416e
+1	415	1668795194238551672	CMakeFiles/cantidad_letras.dir/estudiante/src/cantidad_letras.cpp.o	b156a4715c2884e9
+415	477	1668795194302553101	cantidad_letras	d900cf6abb4d416e
+1	304	1668795384902424630	CMakeFiles/cantidad_letras.dir/estudiante/src/cantidad_letras.cpp.o	b156a4715c2884e9
+304	349	1668795384946425149	cantidad_letras	d900cf6abb4d416e
+0	295	1668795450731187395	CMakeFiles/cantidad_letras.dir/estudiante/src/cantidad_letras.cpp.o	b156a4715c2884e9
+295	342	1668795450775187900	cantidad_letras	d900cf6abb4d416e
