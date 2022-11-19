@@ -95,13 +95,6 @@ build CMakeFiles/bolsa.dir/estudiante/src/bolsa.cpp.o: CXX_COMPILER__bolsa_Debug
   OBJECT_DIR = CMakeFiles/bolsa.dir
   OBJECT_FILE_DIR = CMakeFiles/bolsa.dir/estudiante/src
 
-build CMakeFiles/bolsa.dir/estudiante/src/conjunto_letras.cpp.o: CXX_COMPILER__bolsa_Debug /home/gonzalomp/Escritorio/EstructuraDatos/ej03_tdas_letras/estudiante/src/conjunto_letras.cpp || cmake_object_order_depends_target_bolsa
-  DEP_FILE = CMakeFiles/bolsa.dir/estudiante/src/conjunto_letras.cpp.o.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -I/home/gonzalomp/Escritorio/EstructuraDatos/ej03_tdas_letras/estudiante/include
-  OBJECT_DIR = CMakeFiles/bolsa.dir
-  OBJECT_FILE_DIR = CMakeFiles/bolsa.dir/estudiante/src
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target bolsa
@@ -110,7 +103,7 @@ build CMakeFiles/bolsa.dir/estudiante/src/conjunto_letras.cpp.o: CXX_COMPILER__b
 #############################################
 # Link the executable bolsa
 
-build bolsa: CXX_EXECUTABLE_LINKER__bolsa_Debug CMakeFiles/bolsa.dir/estudiante/src/bolsa.cpp.o CMakeFiles/bolsa.dir/estudiante/src/conjunto_letras.cpp.o
+build bolsa: CXX_EXECUTABLE_LINKER__bolsa_Debug CMakeFiles/bolsa.dir/estudiante/src/bolsa.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/bolsa.dir
   POST_BUILD = :
