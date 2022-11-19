@@ -27,9 +27,9 @@ private:
 
 public:
 
-    LettersBag();
+    LettersBag() = default;
 
-    LettersBag(const LettersSet & letterSet);
+    LettersBag( LettersSet & letterSet);
 
     void insertLetter(const char & l);
 
@@ -39,7 +39,7 @@ public:
 
     void clear();
 
-    void size();
+    unsigned int size() const;
 
     LettersBag & operator= (const LettersBag & other);
 
