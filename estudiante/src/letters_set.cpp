@@ -64,7 +64,7 @@ bool LettersSet::find(const char &key) {
     bool found = false;
     LettersSet::iterator it;
 
-    it = letras.find(key);
+    it = letras.find(toupper(key));
     if(it != end()) found = true;
 
     return found;
