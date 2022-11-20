@@ -25,30 +25,91 @@ using namespace std;
 
  public:
 
+     /**
+      * @brief Constructor por defecto
+      * @post Crea un objeto Dictionary vacío
+      */
      Dictionary()=default;
 
+     /**
+      * @brief Constructor de copia
+      * @param other Objeto Dictionary que se copia
+      */
      Dictionary(const Dictionary & other);
 
+     /**
+      * @brief Indica si una palabra está en el diccionario.
+      * @param val Palabra a buscar
+      * @return true si la palabra está, false en caso contario
+      */
      bool existe (const string & val) const;
 
+     /**
+      * @brief Añade una palabra al diccionario
+      * @param val Palabra que se añade al diccionario
+      * @return Booleano que indica si la inserción ha tenido éxito, es decir, si la palabra no existía en el diccionario.
+      */
      bool insert (const string & val);
 
+     /**
+      * @brief Elimina una palabra del diccionario.
+      * @param val Palabra a eliminar.
+      * @return Booleano que indica si la eliminación ha sido exitosa.
+      */
      bool erase (const string & val);
 
+     /**
+      * @brief Elimina todas las palabras del diccionario.
+      * @post EL diccionario se queda con ningún elemento.
+      */
      void clear();
 
+     /**
+      * @brief Comprueba si el diccionario está vacío.
+      * @return true si el diccionario está vacío, false en caso contrario.
+      */
      bool empty () const;
 
+     /**
+      * @brief Tamaño del diccionario.
+      * @return Número de elementos del diccionario.
+      */
      unsigned int size () const;
 
+     /**
+      * @brief Indica el número de apariciones de una letra.
+      * @param c Letra de la que se cuentan sus apariciones.
+      * @return Número de apariciones de la letra.
+      */
      int getOccurrences (const char c);
 
+     /**
+      * @brief Cuenta el total de letras de un objeto diccionario.
+      * @return Número total de letras.
+      */
      int getTotalLetters ();
 
+     /**
+      * @brief Devuelve las palabras con la longitud suministrada como parámetro.
+      * @param length Longitud de palabra.
+      * @return Vector con las palabras de longitud length.
+      */
      vector<string> wordsOfLength (int length) const;
 
+     /**
+      * Sobrecarga del operador de salida.
+      * @param os Flujo de salida.
+      * @param dic Objeto diccionario a imprimir.
+      * @return Flujo de salida para poder encadenar el operador.
+      */
      friend ostream & operator<<(ostream &os, const Dictionary &dic);
 
+     /**
+      * @brief Sobrecarga del operador de entrada.
+      * @param is Flujo de entrada.
+      * @param dic Diccionario a rellenar.
+      * @return Flujo de entrada para poder encadenar el operador.
+      */
      friend istream & operator>>(istream &is, Dictionary &dic);
 
      /**

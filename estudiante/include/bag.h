@@ -28,20 +28,56 @@ private:
     vector<T> v;
 
 public:
+    /**
+     * @brief Constructor por defecto.
+     * @post Genera un vector de 0 elementos.
+     */
     Bag() = default;
 
+    /**
+     * @brief Constructor de copia. Crea una copia exacta de otro objeto Bag.
+     * @param other Objeto que se copia.
+     */
     Bag(const Bag<T> &other);
 
+    /**
+     * @brief Añade un elemento a la bolsa
+     * @param element Elemento que se añade.
+     * @post El tamaño del vector aumenta.
+     */
     void add(const T & element);
 
+    /**
+     * @brief Extrae un elemento de forma aleatoria
+     * @return Un elemento al azar.
+     * @pre Bag no puede estar vacío
+     * @post El elemento extraído se elimina de la bolsa
+     */
     T get();
 
+    /**
+     * @brief Elimina todos los elementos de la bolsa.
+     * @post La bolsda se queda vacía.
+     */
     void clear();
 
+    /**
+     * @brief Tamaño de la bolsa
+     * @return El número de elementos de la bolsa.
+     */
     unsigned int size() const;
 
+    /**
+     * @brief Comprueba si la bolsa está vacía.
+     * @return Devuelve true si la bolsa está vacía, false en caso contrario.
+     */
     bool empty();
 
+    /**
+     * Sobrecarga del operador de asignación.
+     * @param other Objeto Bag que se copia
+     * @return Referencia a this.
+     */
     const Bag<T>& operator= (const Bag<T> & other);
 
 };
