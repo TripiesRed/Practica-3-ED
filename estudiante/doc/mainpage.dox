@@ -5,11 +5,11 @@
 En esta práctica nos internaremos en el juego de las letras. Dicho juego consiste en formar palabras a partir de una serie de letras proporcionadas.
 Existen dos modalidades:
 - Palabra más larga: gana la palabra más larga.
--Palabra más valorada: gana la palabra que más puntos obtenga según un sistema de puntuación.
+- Palabra más valorada: gana la palabra que más puntos obtenga según un sistema de puntuación.
 
 # Una breve idea de la implementación
 
-Como hemos mencionado, uno de los modos de juego es por puntuación, luego necesitamos saber los puntos que corresponden a cada letra. Nace así la clase LetterSet,
+Como hemos mencionado, uno de los modos de juego es por puntuación, luego necesitamos saber los puntos que corresponden a cada letra. Nace así la clase LettersSet,
 que desarrolla un contenedor que almacena letras, sus respectivos puntos y, además, las veces que pude aparecer en el juego dicha letra.
 
 A la hora de almacenar las letras, necesitamos una estructura que nos permita añadir y extraer letras aleatoriamente, dotándola de funcionalidades

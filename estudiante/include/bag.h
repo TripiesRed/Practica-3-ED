@@ -9,7 +9,9 @@
 
 #include <iostream>
 #include <vector>
-#include <algorithm>
+#include<stdlib.h>
+#include<time.h>
+
 
 using namespace std;
 
@@ -80,6 +82,8 @@ public:
      */
     const Bag<T>& operator= (const Bag<T> & other);
 
+    void show() const;
+
 };
 
 template<class T> Bag<T>::Bag(const Bag<T> &other) {
@@ -91,6 +95,7 @@ template<class T>void Bag<T>::add (const T & element) {
 };
 
 template<class T>T Bag<T>::get(){
+    srand(time(NULL));
     int random = rand() % v.size();
     T element = v[random];
     v.erase(v.begin()+random);
@@ -114,5 +119,11 @@ template<class T>const Bag<T>& Bag<T>::operator= (const Bag<T> & other){
     return *this;
 };
 
+template<class T>void Bag<T>::show () const{
+    for (int i = 0; i < v.size(); i++){
+        cout << v[i] << endl;
+    }
+    cout << "fin" << endl;
+}
 
 #endif

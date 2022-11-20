@@ -9,6 +9,7 @@
 
 #include "bag.h"
 #include "letters_set.h"
+#include <algorithm>
 
 
 using namespace std;

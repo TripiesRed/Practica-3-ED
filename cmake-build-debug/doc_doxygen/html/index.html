@@ -68,11 +68,12 @@ $(function() {
 <div class="textblock"><h1><a class="anchor" id="autotoc_md0"></a>
 Introducción</h1>
 <p>En esta práctica nos internaremos en el juego de las letras. Dicho juego consiste en formar palabras a partir de una serie de letras proporcionadas. Existen dos modalidades:</p><ul>
-<li>Palabra más larga: gana la palabra más larga. -Palabra más valorada: gana la palabra que más puntos obtenga según un sistema de puntuación.</li>
+<li>Palabra más larga: gana la palabra más larga.</li>
+<li>Palabra más valorada: gana la palabra que más puntos obtenga según un sistema de puntuación.</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Una breve idea de la implementación</h1>
-<p>Como hemos mencionado, uno de los modos de juego es por puntuación, luego necesitamos saber los puntos que corresponden a cada letra. Nace así la clase LetterSet, que desarrolla un contenedor que almacena letras, sus respectivos puntos y, además, las veces que pude aparecer en el juego dicha letra.</p>
+<p>Como hemos mencionado, uno de los modos de juego es por puntuación, luego necesitamos saber los puntos que corresponden a cada letra. Nace así la clase <a class="el" href="classLettersSet.html" title="TDA LettersSet.">LettersSet</a>, que desarrolla un contenedor que almacena letras, sus respectivos puntos y, además, las veces que pude aparecer en el juego dicha letra.</p>
 <p>A la hora de almacenar las letras, necesitamos una estructura que nos permita añadir y extraer letras aleatoriamente, dotándola de funcionalidades que nos permitirán una cómoda utilización de la misma. De esta necesidad, surge la clase template <a class="el" href="classBag.html" title="TDA abstracto Bolsa.">Bag</a>. La particularización de esta estructura a datos tipo char (caracteres), genera el módulo <a class="el" href="classLettersBag.html" title="TDA LettersBag.">LettersBag</a>.</p>
 <p>Por último, es imprescindible manejar palabras complets, y en concreto, conocer qué soluciones del juego son válidas. Como no estaremos interesados en almacenar definiciones de nuestras palabras, sólo los términos, necesitaremos una estructura que nos permita almacenar strings, sin necesidad de almacenar información más compleja. Este es el TDA <a class="el" href="classDictionary.html" title="TDA Dictionary.">Dictionary</a>.</p>
 <h1><a class="anchor" id="autotoc_md2"></a>

@@ -109,7 +109,7 @@ public:
      * @return Booleano que marca true si el valor pertenece al LettersSet,
      *  false en caso contrario.
      */
-    bool find (const char &key);
+    bool find (const char &key) const;
 
     /**
      * @brief Sobrecarga del operador de asignación.
@@ -124,6 +124,7 @@ public:
      * @return Devuelve la estructura LetterInfo del carácter consultado.
      */
     LetterInfo & operator[](const char &val);
+
 
     /**
      * @brief Sobrecarga del operador de salida

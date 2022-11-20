@@ -12,7 +12,7 @@ using namespace std;
         FUNCIONES PÚBLICAS
 *****************************************/
 
-LettersBag::LettersBag( LettersSet & letterSet) {
+LettersBag::LettersBag(LettersSet & letterSet) {
 
     for(char cont = 'A'; cont <= 'Z'; cont++){
         if(letterSet.find(cont)){

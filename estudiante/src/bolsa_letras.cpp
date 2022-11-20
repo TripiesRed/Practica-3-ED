@@ -1,11 +1,7 @@
-//
-// Created by diegoos_03 on 19/11/22.
-//
 #include "letters_set.h"
 #include "letters_bag.h"
 #include <fstream>
 #include <iostream>
-
 
 using namespace std;
 
@@ -27,10 +23,11 @@ int main (int argc, char *arg[]){
 
     LettersBag bolsa_letras(conjunto_letras);
 
-    for(int i = 0; i < bolsa_letras.size(); i++){
-        cout << bolsa_letras.extractLetter();
-    }
+    vector<char> v;
+    v = bolsa_letras.extractLetters(bolsa_letras.size());
+
+    for (int i = 0; i < v.size(); i++)
+        cout << v[i] << endl;
 
     return 0;
-
 }

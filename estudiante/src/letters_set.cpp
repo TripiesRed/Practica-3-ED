@@ -60,7 +60,7 @@ int LettersSet::getScore (string word){
 }
 
 //Busca un elemento en el contenedor
-bool LettersSet::find(const char &key) {
+bool LettersSet::find(const char &key) const{
     bool found = false;
     LettersSet::iterator it;
 
@@ -69,6 +69,7 @@ bool LettersSet::find(const char &key) {
 
     return found;
 }
+
 
 //Operador de copia
 LettersSet & LettersSet::operator=(const LettersSet &cl) {
