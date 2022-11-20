@@ -1,8 +1,8 @@
-/home/diegoos_03/Escritorio/Pra/Practica-3-ED/cmake-build-debug/CMakeFiles/conjunto_letras.dir
-/home/diegoos_03/Escritorio/Pra/Practica-3-ED/cmake-build-debug/CMakeFiles/bolsa.dir
-/home/diegoos_03/Escritorio/Pra/Practica-3-ED/cmake-build-debug/CMakeFiles/bolsa_letras.dir
-/home/diegoos_03/Escritorio/Pra/Practica-3-ED/cmake-build-debug/CMakeFiles/cantidad_letras.dir
-/home/diegoos_03/Escritorio/Pra/Practica-3-ED/cmake-build-debug/CMakeFiles/palabras_longitud.dir
-/home/diegoos_03/Escritorio/Pra/Practica-3-ED/cmake-build-debug/CMakeFiles/doc_doxygen.dir
-/home/diegoos_03/Escritorio/Pra/Practica-3-ED/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/diegoos_03/Escritorio/Pra/Practica-3-ED/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej03_tdas_letras/cmake-build-debug/CMakeFiles/conjunto_letras.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej03_tdas_letras/cmake-build-debug/CMakeFiles/bolsa.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej03_tdas_letras/cmake-build-debug/CMakeFiles/bolsa_letras.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej03_tdas_letras/cmake-build-debug/CMakeFiles/cantidad_letras.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej03_tdas_letras/cmake-build-debug/CMakeFiles/palabras_longitud.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej03_tdas_letras/cmake-build-debug/CMakeFiles/doc_doxygen.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej03_tdas_letras/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej03_tdas_letras/cmake-build-debug/CMakeFiles/rebuild_cache.dir
