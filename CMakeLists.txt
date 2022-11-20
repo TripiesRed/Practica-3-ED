@@ -21,7 +21,7 @@ if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/bolsa_letras.cpp)
   add_executable(bolsa_letras
     ${BASE_FOLDER}/src/bolsa_letras.cpp
     ${BASE_FOLDER}/src/letters_bag.cpp
-    ${BASE_FOLDER}/src/letters_set.cpp)
+    ${BASE_FOLDER}/src/letters_set.cpp estudiante/src/bolsa_letras.cpp)
 endif()
 
 if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/cantidad_letras.cpp)

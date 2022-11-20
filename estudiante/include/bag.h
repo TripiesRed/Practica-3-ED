@@ -75,6 +75,7 @@ template<class T>bool Bag<T>::empty() {
 
 template<class T>const Bag<T>& Bag<T>::operator= (const Bag<T> & other){
     v = other.v;
+    return *this;
 };
 
 

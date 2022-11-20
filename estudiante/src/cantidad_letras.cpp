@@ -1,4 +1,4 @@
-#include <dictionary.h>
+#include "dictionary.h"
 #include "letters_set.h"
 #include <iostream>
 #include <fstream>
