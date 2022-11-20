@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['letterinfo_7',['LetterInfo',['../structLetterInfo.html',1,'']]],
-  ['lettersset_8',['LettersSet',['../classLettersSet.html',1,'']]]
+  ['iterator_45',['iterator',['../classDictionary_1_1iterator.html',1,'Dictionary::iterator'],['../classLettersSet_1_1iterator.html',1,'LettersSet::iterator']]]
 ];

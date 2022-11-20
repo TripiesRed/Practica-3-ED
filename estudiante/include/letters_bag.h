@@ -9,7 +9,7 @@
 
 #include "bag.h"
 #include "letters_set.h"
-#include "../src/letters_set.cpp"
+
 
 using namespace std;
 

@@ -1,11 +1,65 @@
-/*! \mainpage Título de la página principal
+/*! \mainpage Práctica 3. Contenedores no lineales. Juego de las letras.
 
 # Introducción
 
-A RELLENAR POR EL ESTUDIANTE
+En esta práctica nos internaremos en el juego de las letras. Dicho juego consiste en formar palabras a partir de una serie de letras proporcionadas.
+Existen dos modalidades:
+- Palabra más larga: gana la palabra más larga.
+-Palabra más valorada: gana la palabra que más puntos obtenga según un sistema de puntuación.
+
+# Una breve idea de la implementación
+
+Como hemos mencionado, uno de los modos de juego es por puntuación, luego necesitamos saber los puntos que corresponden a cada letra. Nace así la clase LetterSet,
+que desarrolla un contenedor que almacena letras, sus respectivos puntos y, además, las veces que pude aparecer en el juego dicha letra.
+
+A la hora de almacenar las letras, necesitamos una estructura que nos permita añadir y extraer letras aleatoriamente, dotándola de funcionalidades
+que nos permitirán una cómoda utilización de la misma. De esta necesidad, surge la clase template Bag. La particularización de esta estructura a datos tipo char (caracteres),
+genera el módulo LettersBag.
+
+Por último, es imprescindible manejar palabras complets, y en concreto, conocer qué soluciones del juego son válidas. Como no estaremos interesados en almacenar
+definiciones de nuestras palabras, sólo los términos, necesitaremos una estructura que nos permita almacenar strings, sin necesidad de almacenar información más compleja.
+Este es el TDA Dictionary.
 
 # Ejecutables
 
-A RELLENAR POR EL ESTUDIANTE
+Durante la implementación de los módulos anteriormente mencionados, desarrollamos una serie de ejecutables que ponen de manifiesto el correcto uso de dichas clases.
 
+## Conjunto_letras (LettersSet):
+El programa recibe dos argumentos:
+- Archivo de información sobre el conjunto de letras.
+- Una palabra.
+
+A partir de la información leída, calcula la puntuación de la palabra.
+
+## Bolsa(Bag):
+El programa recibe:
+- Un caracter "I" o "C" como primer argumento.
+- Una serie de enteros o de caracteres, en fucnión del primer argumento.
+
+El ejecutable crea una bolsa de enteros o caracteres con los argumentos proporcionados, y va extrayendo e imprimendo dichos elementos hasta que la bolsa queda vacía.
+
+## Bolsa_letras (LettersBag):
+Crea un conjunto de letras (LettersSet), y lo rellene a partir de la información leída de un archivo. Después, crea una bolsa de letras (LettersBag), y la rellena con la información del LettersSet anterior.
+Finalmente, extrae todas las letras de la LettersBag aleatoriamente y las imprime por pantalla.
+
+## Palabras_longitud(Dictionary):
+Recibe:
+- Un fichero con las palabras de un diccionario.
+- Un entero con la longitud de las palabras que buscamos.
+
+Construye un Dictionary con el fichero de las palabras, extrae de dicho diccionario las palabras de
+la longitud que buscamos y las imprime por pantalla.
+
+## Cantidad_letras(Dictionary):
+Recibe:
+- Un fichero con las palabras de un diccionario.
+- Un fichero de letras.
+Construye un Dictionary con el fichero de palabras, un LettersSet con el fichero de letras, e imprime
+por pantalla, para cada letra en el LettersSet, el número de ocurrencias de la letra en el diccionario y
+su frecuencia relativa.
+
+# Autores
+Esta párctica fue realizada por:
+- Gonzalo Martínez Piédrola
+- Diego Ortega Sánchez
 */
